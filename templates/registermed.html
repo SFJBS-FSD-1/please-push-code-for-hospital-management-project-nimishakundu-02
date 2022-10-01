@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicine Management</title>
+</head>
+<body>
+<h1>Welcome to Medicine Management System</h1>
+<div class="col-md-6 col-md-offset-3">
+<form action="/registermed" method="post">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quantity" name="quantity">
+    <input type="text" placeholder="rate" name="rate">
+    <button type="submit">Register</button>
+</form>
+    {% if flag %}
+<h3> Medicine Added</h3>
+    {% endif %}
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Management</title>
+</head>
+<body>
+<h1>Welcome to Hospital Management System</h1>
+<div class="col-md-6 col-md-offset-3">
+<form action="/registerpatient" method="post">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="phone_number" name="phone_number">
+    <input type="text" placeholder="age" name="age">
+    <input type="text" placeholder="bed_type" name="bed_type">
+    <input type="text" placeholder="address" name="address">
+    <input type="text" placeholder="state" name="state">
+    <input type="text" placeholder="city" name="city">
+    <input type="text" placeholder="patient_status" name="patient_status">
+    <button type="submit">Register</button>
+</form>
+    {% if flag %}
+<h3> Patient Added</h3>
+    {% endif %}
+</div>
+</body>
+</html>
